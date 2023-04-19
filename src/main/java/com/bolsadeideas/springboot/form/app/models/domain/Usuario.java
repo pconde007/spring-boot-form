@@ -1,6 +1,7 @@
 package com.bolsadeideas.springboot.form.app.models.domain;
 
 import com.bolsadeideas.springboot.form.app.validation.IdentificadorRegex;
+import com.bolsadeideas.springboot.form.app.validation.Requerido;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -17,7 +18,8 @@ public class Usuario {
 	//@NotEmpty(message = "el nombre no puede ser vacío")
 	private String nombre;
 
-	@NotEmpty
+	//@NotEmpty
+	@Requerido
 	private String apellido;
 
 	@NotBlank
@@ -27,7 +29,7 @@ public class Usuario {
 	@NotEmpty
 	private String password;
 
-	@NotEmpty
+	@Requerido
 	@Email(message = "correo con formato incorrecto")
 	private String email;
 
