@@ -15,7 +15,9 @@
 		<li th:text="${usuario.email}">
 		<li th:text="${usuario.identificador}">
 		<li th:text="${usuario.cuenta}">
+		<li th:text="${usuario.pais.id}">
 		<li th:text="${usuario.pais.codigo}">
+		<li th:text="${usuario.pais.nombre}">
 		<li th:text="${#calendars.format(usuario.fechaNacimiento, 'dd-MM-yyyy')}">
 	</ul>
 </body>

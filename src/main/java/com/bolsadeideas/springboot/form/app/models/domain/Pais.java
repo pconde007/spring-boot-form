@@ -1,12 +1,12 @@
 package com.bolsadeideas.springboot.form.app.models.domain;
 
-import jakarta.validation.constraints.NotEmpty;
+//import jakarta.validation.constraints.NotEmpty;
 
 public class Pais {
 
 	private Integer id;
 	
-	@NotEmpty
+	//@NotEmpty
 	private String codigo;
 	private String nombre;
 
