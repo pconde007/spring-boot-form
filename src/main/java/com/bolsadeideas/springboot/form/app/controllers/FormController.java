@@ -124,7 +124,7 @@ public class FormController {
 		Usuario usuario = new Usuario();
 		usuario.setNombre("John");
 		usuario.setApellido("Doe");
-		usuario.setIdentificador("123.456.789-K");
+		usuario.setIdentificador("12.456.789-K");
 		usuario.setHabilitar(true);
 		usuario.setValorSecreto("Algún valor secreto ****");
 		usuario.setPais(new Pais(3, "CL", "Chile"));
