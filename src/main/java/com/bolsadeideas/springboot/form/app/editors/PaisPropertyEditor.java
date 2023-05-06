@@ -15,13 +15,14 @@ public class PaisPropertyEditor extends PropertyEditorSupport {
 
 	@Override
 	public void setAsText(String idString) throws IllegalArgumentException {
+
 		try {
 			Integer id = Integer.parseInt(idString);
 			this.setValue(service.obtenerPorId(id));
-		} 
-		catch (NumberFormatException e) {
+		} catch (NumberFormatException e) {
 			setValue(null);
 		}
+
 	}
 
 }

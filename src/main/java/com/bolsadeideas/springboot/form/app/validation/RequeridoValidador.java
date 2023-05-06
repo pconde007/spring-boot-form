@@ -1,10 +1,9 @@
 package com.bolsadeideas.springboot.form.app.validation;
 
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
 import org.springframework.util.StringUtils;
-
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
-
 
 public class RequeridoValidador implements ConstraintValidator<Requerido, String> {
 

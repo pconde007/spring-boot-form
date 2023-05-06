@@ -1,11 +1,10 @@
 package com.bolsadeideas.springboot.form.app.models.domain;
 
-//import jakarta.validation.constraints.NotEmpty;
+//import javax.validation.constraints.NotEmpty;
 
 public class Pais {
 
 	private Integer id;
-	
 	//@NotEmpty
 	private String codigo;
 	private String nombre;
@@ -47,7 +46,5 @@ public class Pais {
 	public String toString() {
 		return this.id.toString();
 	}
-	
-	
 
 }

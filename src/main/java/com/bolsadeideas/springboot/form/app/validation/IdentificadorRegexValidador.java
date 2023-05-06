@@ -1,9 +1,9 @@
 package com.bolsadeideas.springboot.form.app.validation;
 
-import jakarta.validation.ConstraintValidator;
-import jakarta.validation.ConstraintValidatorContext;
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
 
-public class IdentificadorRegexValidador implements ConstraintValidator<IdentificadorRegex, String> {
+public class IdentificadorRegexValidador implements ConstraintValidator<IdentificadorRegex, String>{
 
 	@Override
 	public boolean isValid(String value, ConstraintValidatorContext context) {

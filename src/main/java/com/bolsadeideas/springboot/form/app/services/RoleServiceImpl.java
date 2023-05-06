@@ -9,9 +9,8 @@ import com.bolsadeideas.springboot.form.app.models.domain.Role;
 
 @Service
 public class RoleServiceImpl implements RoleService {
-	
-	private List<Role> roles;
 
+	private List<Role> roles;
 	public RoleServiceImpl() {
 		this.roles = new ArrayList<>();
 		this.roles.add(new Role(1, "Administrador", "ROLE_ADMIN"));
@@ -21,20 +20,18 @@ public class RoleServiceImpl implements RoleService {
 
 	@Override
 	public List<Role> listar() {
-		return this.roles;
+		return roles;
 	}
 
 	@Override
 	public Role obtenerPorId(Integer id) {
-		Role resultado = null;
-		
-		for(Role role: this.roles) {
-			if (id == role.getId()){
-				resultado = role;
-				break;
-			}
-		}	
-		
+        Role resultado = null;
+        for(Role role: roles) {
+        	if(id == role.getId()) {
+        		resultado = role;
+        		break;
+        	}
+        }
 		return resultado;
 	}
 

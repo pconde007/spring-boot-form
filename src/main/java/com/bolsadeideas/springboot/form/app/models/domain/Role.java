@@ -4,7 +4,7 @@ public class Role {
 
 	private Integer id;
 	private String nombre;
-	private String role;	
+	private String role;
 
 	public Role() {
 	}
@@ -41,14 +41,16 @@ public class Role {
 
 	@Override
 	public boolean equals(Object obj) {
+		
 		if(this == obj) {
 			return true;
 		}
+		
 		if(!(obj instanceof Role)) {
 			return false;
 		}
 		
-		Role role = (Role)obj;
+		Role role = (Role) obj;
 		return this.id != null && this.id.equals(role.getId());
 	}
 	
