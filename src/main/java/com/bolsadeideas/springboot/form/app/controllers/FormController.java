@@ -32,7 +32,7 @@ import com.bolsadeideas.springboot.form.app.models.domain.Role;
 import com.bolsadeideas.springboot.form.app.models.domain.Usuario;
 import com.bolsadeideas.springboot.form.app.services.PaisService;
 import com.bolsadeideas.springboot.form.app.services.RoleService;
-import com.bolsadeideas.springboot.form.app.validation.UsuarioValidador;
+import com.bolsadeideas.springboot.form.app.validation.UsuarioValidador; 
 
 @Controller
 @SessionAttributes("usuario")
